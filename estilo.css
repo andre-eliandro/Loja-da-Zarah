@@ -1,0 +1,272 @@
+body {
+   
+    color: rgb(22, 3, 39);
+    padding: 0px 0px;
+}
+div {
+    border: 0;
+    margin: 0;
+    padding: 0,5;
+}
+
+header{ 
+    margin: 0;
+    border: 3px;
+    padding: 55px;
+    border-color: blue;
+    background: linear-gradient(to right, #9333ea, #ec4899, #9333ea);
+    line-height: 1.5;
+    text-align: center;
+}
+h1{ 
+    color: #f4ecf7;
+    padding: 30px 40px;
+    font-size: 60px;
+    
+    margin: 0 auto;
+}
+h2{
+    color: #f4ecf7;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 20px;
+   
+}
+h5.sub {
+    color: #c41cdb;
+    font-size: 30px;
+    margin: 20px auto; /* Margem em cima/baixo e auto nas laterais */
+    padding: 0 15px;    /* Padding pequeno apenas para o texto não encostar na borda */
+    display: block;      /* Mude de flex para block se for apenas texto centralizado */
+    text-align: center;  /* Centraliza o texto */
+    max-width: 800px;    /* Define um limite de largura para telas grandes */
+    width: 90%;          /* Garante que em telas pequenas ele ocupe quase tudo */
+}
+h6.sub {
+    color: #c41cdb;
+    font-size: 30px;
+    margin: 20px auto; /* Margem em cima/baixo e auto nas laterais */
+    padding: 0 15px;    /* Padding pequeno apenas para o texto não encostar na borda */
+    display: block;      /* Mude de flex para block se for apenas texto centralizado */
+    text-align: center;  /* Centraliza o texto */
+    max-width: 800px;    /* Define um limite de largura para telas grandes */
+    width: 90%;          /* Garante que em telas pequenas ele ocupe quase tudo */
+}
+
+p{
+    padding: 20px ;
+    margin: 0 auto;
+    font-size: 25px;
+    text-align: center;
+}
+.titulos div{ 
+
+    display: flex;
+    flex-wrap: wrap;       
+    justify-content: center; 
+    gap: 12px;             
+    margin: 30px 0;       
+}
+
+
+/* --- CATEGORIAS (BOTOES ARREDONDADOS) --- */
+.categorias-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 30px 0;
+}
+
+.btn-categoria {
+    display: flex;
+    align-items: center;    
+    padding: 10px 20px;    
+    border: 1px solid #e0e0e0; 
+    border-radius: 50px;   /* Formato pílula da foto */
+    background-color: #fff;
+    color: #666;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+ 
+.Instagram{ 
+
+    align-items: center;    
+    padding: 10px 20px;    
+    border: 1px solid #e0e0e0; 
+    border-radius: 50px;   /* Formato pílula da foto */
+    background-color: #fff;
+    color: #b70aeb;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+
+}
+.btn-categoria:hover, .btn-categoria.active {
+    background-color: #9b59b6; 
+    color: white;
+    border-color: #9b59b6;
+    box-shadow: 0 4px 8px rgba(155, 89, 182, 0.2); 
+}
+
+/* --- GRID DE PRODUTOS --- */
+.container-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 280px));
+    gap: 30px;
+    padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+/* --- ESTILO DO CARD --- */
+.card-produto {
+    width: 280px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #eee; /* Bordinha leve para separar do fundo */
+}
+
+
+.card-produto:hover {
+    transform: translateY(-5px);
+}
+
+.card-produto img {
+    width: 100%;
+    height: 250px;      /* Garante fotos alinhadas */
+    object-fit: cover;  
+}
+
+.info-produto {
+    padding: 15px;      /* Espaço interno para o texto */
+}
+
+/* --- TIPOGRAFIA (ESTILO PROFISSIONAL) --- */
+.tag-categoria {
+    font-size: 11px;      
+    color: #9b59b6;          
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+    background: #f4ecf7;
+    padding: 4px 10px;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.nome-produto {
+    font-size: 1.1rem;   /* Tamanho mais próximo da referência */
+    font-weight: 600;    /* Seminegrito */
+    color: #333;             
+    margin: 10px 0 5px 0;    
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.descritivo-produto {
+    font-size: 0.85rem;  /* Texto menor e delicado */
+    color: #888;             
+    line-height: 1.4;        
+    margin-bottom: 20px;
+}
+
+/* --- RODAPÉ (PREÇO E BOTÃO LADO A LADO) --- */
+.footer-card {
+    display: flex;            
+    justify-content: space-between; 
+    align-items: center;      
+    margin-top: auto;   /* Alinha o rodapé no fundo se o texto for curto */
+}
+
+.preco {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.btn-comprar {
+    background-color: #9b59b6;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn-comprar:hover {
+    background-color: #8e44ad;
+}
+.bungee-regular {
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.rodape {
+    background: linear-gradient(to right, #9333ea, #ec4899, #9333ea);
+    margin:0; /* Espaço fora do rodapé */
+    padding: 40px 20px;           /* Espaço dentro do rodapé */
+    text-align: center;
+    color: white;
+}
+
+.rodape-titulo {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: white !important; /* Garante que fique branco */
+}
+
+.rodape-subtitulo {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.rodape-instagram {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: #9333ea;
+    border-radius: 50%; /* Faz o círculo do ícone */
+    text-decoration: none;
+    font-size: 24px;
+    margin-bottom: 30px;
+    transition: transform 0.3s;
+}
+
+.rodape-instagram:hover {
+    transform: scale(1.1);
+}
+
+.rodape-copyright {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+}
+.desenvolvido-por {
+    display: block;
+    margin-top: 15px; /* Dá uma folga entre o copyright e os nomes */
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+}
+
+.desenvolvido-por strong {
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2); /* Deixa os nomes mais nítidos */
+}
