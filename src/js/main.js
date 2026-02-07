@@ -23,7 +23,7 @@ botoesComprar.forEach(botao => {
         const nomeProduto = card.querySelector('.nome-produto').innerText;
         
         // 2. Definir o seu número de telefone (DDD + Número, tudo junto)
-        const seuTelefone = "5551997948767"; // SUBSTITUA PELO SEU NÚMERO
+        const seuTelefone = "5551997948764"; // SUBSTITUA PELO SEU NÚMERO
         
         // 3. Criar a mensagem personalizada
         const mensagem = `Olá Zarah! Gostaria de encomendar o produto: ${nomeProduto}`;
@@ -32,7 +32,7 @@ botoesComprar.forEach(botao => {
         const mensagemCodificada = encodeURIComponent(mensagem);
         
         // 5. Criar a URL final do WhatsApp
-        const urlWhatsapp = `https://wa.me/${5551997948767}?text=${mensagemCodificada}`;
+        const urlWhatsapp = `https://wa.me/${5551997948764}?text=${mensagemCodificada}`;
         
         // 6. Abrir o WhatsApp em uma nova aba
         window.open(urlWhatsapp, '_blank');
