@@ -32,7 +32,7 @@ botoesComprar.forEach(botao => {
         const mensagemCodificada = encodeURIComponent(mensagem);
         
         // 5. Criar a URL final do WhatsApp
-        const urlWhatsapp = `https://wa.me/${5551997948767}?text=${mensagemCodificada}`;
+        const urlWhatsapp = `https://wa.me/${5551997948764}?text=${mensagemCodificada}`;
         
         // 6. Abrir o WhatsApp em uma nova aba
         window.open(urlWhatsapp, '_blank');
